@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 300pc ;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(1.jpg);
+            background-position: center;
+            background-repeat: no;
+            background-size: cover;
+             background-attachment: fixed;
+           
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<>
+   
+   <div class="navbar">
+        <a href="Home.html"><button type="submit">Home</button></a>
+        <a href="SING.HTML"><button type="submit">product</button></a>
+        <a href="chat.html"><button type="submit">Chart</button></a>
+        <a href="about.html"><button type="submit">About Us</button></a>
+    <a href="face.html"><button type="submit">Contact</button></a>
+        <a href="https://habibgh1234.github.io/Habib.com/"><button type="submit">More</button></a>
+<a href="Direction.html"> <button type="submit">Get Direction</button></a>
+<a href="shop.html"> <button type="submit">Shop</button></a>
+<a href="index.html"><button type="submit">Logout</button></a>
+</div>
+<div class="content" style="color: #45a049; font-style: italic;">
+    <h1 style="color: #45a049; font-style: italic;">Our Products</h1><br />
+    <h1 >Welcome To PfagoPharmacy</h1>
+</div>
+<div> 
+    <h1 style="top: auto;color: #45a049; font-style: italic;">Our Products</h1><br />
+
+        <h1 style="color: #020512;"></h1> 
+
+    </div>
+<div class="search-toolbar">
+    <input type="text" id="search-input" placeholder="Search...">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/search.js"></script>
+
+<a href="SING.HTML"><button id="search-btn">Search</button></a>
+</div>
+
+<>
+    <script>
+            document.getElementById('search-btn').onclick = function() {
+    var searchQuery = document.getElementById('search-input').value;
+            var url = 'Sing.html' + encodeURIComponent(searchQuery);
+            window.location.href = url;
+}
+</script>
+
+
+<style>
+    .search-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .search-toolbar input[type="text"] {
+        width: 40%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+    }
+
+    .search-toolbar button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 3px 5px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .search-toolbar button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+
+   
+
+    <script>
+        // Change active navigation link color on scroll
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementsByClassName("navbar")[0];
+        var navItems = navbar.getElementsByTagName("a");
+
+        for (var i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener('click', clickFunction);
+        }
+
+        function clickFunction(event) {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        }
+
+        function myFunction() {
+            var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+            for (var i = 0; i < navItems.length; i++) {
+                var currLink = navItems[i];
+                var refElement = document.getElementById(currLink.getAttribute("href").substr(1));
+                if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.clientHeight > scrollPos) {
+                    currLink.className = "active";
+                } else {
+                    currLink.className = currLink.className.replace(" active", "");
+                }
+            }
+        }
+    </script>
+    <div class="card" style="font: size 1pc;;">
+        <img src="4.jpg" alt="Drug" style="width:10%">
+    </div>
+    <div class="card" style="font: size 1pc;;">
+        <img src="OIP.jpeg" alt="Drug" style="width:10%">
+        </div>
+        <div class="card" style="font: size 1pc;;">
+        <img src="OIP (8).jpeg - Shortcut.lnk" alt="Drug" style="width:10%">
+    </DIV>
+    <div class="card" style="font: size 1pc;;">
+    <img src="Pharmacy-shelving-3-1.jpg" alt="Drug" style="width:10%">
+    <img src="figma 10.jpeg" alt="Drug" style="width:10%">
+    <img src="figma 11.jpeg" alt="Drug" style="width:10%">
+    <div class="card" style="font: size 1pc;;">
+    <img src="figma 3.jpeg" alt="Drug" style="width:10%">
+    <div class="card" style="font: size 1pc;;">
+    <img src="figma 7.jpeg" alt="Drug" style="width:10%">
+    <img src="figma 8.jpeg" alt="Drug" style="width:10%">
+    <img src="figma 12.jpeg" alt="Drug" style="width:10%">
+    <img src="figma 8.jpeg" alt="Drug" style="width:10%">
+
+<h1 style="color: #f00808;">Health talks</h1>
+<p style="color: #f6f6f8;" style="size: 100cm;">The Importance of Prioritizing Medical Health: A Holistic Approach to Well-being"
+
+Introduction:
+
+Medical health, encompassing physical, mental, and emotional well-being, is an invaluable aspect of our lives. In an era
+where lifestyles are becoming increasingly hectic, understanding and prioritizing medical health is crucial for leading
+a fulfilling and balanced life. This essay explores the significance of focusing on medical health, adopting a holistic
+approach that addresses the interconnected aspects of our well-being.
+
+Body:
+
+Physical Health: The Foundation of Well-being
+Physical health forms the cornerstone of our overall well-being. Regular exercise, a balanced diet, and sufficient rest
+contribute to maintaining a healthy body. Exercise not only enhances cardiovascular fitness but also promotes mental
+clarity and emotional stability. Adequate nutrition ensures that our bodies receive the necessary nutrients, fostering
+optimal organ function and disease prevention. Additionally, quality sleep is vital for physical recovery and cognitive
+performance.
+
+Mental Health: Nurturing the Mind-Body Connection
+The intricate link between mental and physical health emphasizes the importance of nurturing our minds. Stress
+management, mindfulness, and adequate relaxation play pivotal roles in maintaining mental equilibrium. Awareness of
+one's emotions, seeking support when needed, and cultivating resilience are essential components of mental well-being.
+As societal awareness of mental health grows, reducing stigma and promoting open conversations become critical in
+fostering a supportive environment for those facing mental health challenges.
+
+Emotional Well-being: Building Strong Connections
+Emotional health is intertwined with our relationships and social connections. Building and maintaining healthy
+relationships contribute to emotional resilience and a sense of belonging. Social support acts as a buffer against
+stress, depression, and anxiety. Cultivating empathy and effective communication skills enhances emotional intelligence,
+enabling individuals to navigate life's challenges more successfully.
+
+Preventive Healthcare: A Proactive Approach
+Prioritizing medical health involves a proactive approach to preventive healthcare. Regular check-ups, screenings, and
+vaccinations can identify potential health issues before they become severe. Emphasizing prevention not only reduces
+healthcare costs but also enhances overall quality of life. Public health initiatives, education, and community
+engagement play crucial roles in fostering a culture of preventive healthcare.
+
+Balancing Work and Life: Striking the Right Equation
+In today's fast-paced world, achieving a balance between professional and personal life is essential for sustained
+medical health. Chronic stress from work-related demands can adversely impact physical and mental well-being.
+Implementing effective time management, setting boundaries, and incorporating leisure activities contribute to a
+harmonious work-life balance, promoting overall health and happiness.
+
+Conclusion:
+
+In conclusion, prioritizing medical health is not merely a personal choice but a fundamental necessity for a fulfilling
+and productive life. A holistic approach that encompasses physical, mental, and emotional well-being is key to achieving
+optimal health. By fostering a culture that values preventive healthcare, emphasizes mental health awareness, and
+encourages a balanced lifestyle, we can collectively work towards a healthier, happier society. The journey to improved
+medical health begins with individual choices and extends to broader societal initiatives, highlighting the
+interconnected nature of our well-being.
+<h1 style="color: #f00808;">Health talks</h1>
+<p style="color: #f6f6f8;" style="size: 100cm;">1. Nutrition and Healthy Eating: The Foundation of Well-being
+Nutrition plays a pivotal role in maintaining optimal health. A balanced diet rich in fruits, vegetables, whole grains,
+lean proteins, and healthy fats provides essential nutrients that support bodily functions. Understanding the importance
+of portion control, mindful eating, and making informed food choices empowers individuals to cultivate a sustainable and
+nourishing relationship with food.
+
+2. Physical Fitness: Unleashing the Benefits of Exercise
+Regular physical activity is not only a means to maintain a healthy weight but also a powerful tool for promoting
+cardiovascular health, strengthening muscles and bones, and enhancing overall well-being. Incorporating diverse forms of
+exercise, such as cardiovascular workouts, strength training, and flexibility exercises, contributes to a holistic
+approach to physical fitness.
+
+3. Mental Resilience: Strategies for Coping with Life's Challenges
+Building mental resilience is essential in navigating life's inevitable challenges. Mindfulness practices, stress
+reduction techniques, and cognitive-behavioral strategies empower individuals to manage stress, anxiety, and other
+mental health concerns effectively. Developing a positive mindset, fostering self-compassion, and seeking professional
+support when needed are integral components of building mental resilience.
+
+4. Sleep Hygiene: The Gateway to Physical and Mental Restoration
+Quality sleep is a fundamental pillar of health, influencing both physical and mental well-being. Establishing
+consistent sleep patterns, creating a conducive sleep environment, and practicing relaxation techniques contribute to
+better sleep hygiene. Adequate and restful sleep is associated with improved cognitive function, emotional regulation,
+and overall resilience to stress.
+
+5. Screen Time and Digital Wellness: Striking a Balance
+In the digital age, managing screen time and promoting digital wellness are crucial for maintaining both physical and
+mental health. Setting boundaries on device use, taking regular breaks, and fostering real-world connections contribute
+to a healthy relationship with technology. Addressing the potential impacts of excessive screen time on sleep, eye
+health, and mental well-being is essential in promoting a balanced and sustainable digital lifestyle.
+
+6. Community Health: The Collective Impact on Well-being
+Individual health is
+
+intimately connected to the health of the community. Engaging in community health initiatives, participating in public
+health campaigns, and advocating for policies that promote a healthier environment contribute to the collective
+well-being of society. From access to healthcare services to addressing social determinants of health, community
+involvement plays a vital role in creating a supportive and health-conscious society.
+
+7. Preventive Healthcare: Investing in Long-Term Wellness
+Preventive healthcare involves taking proactive measures to prevent illness and promote long-term wellness. This
+includes routine check-ups, vaccinations, and screenings tailored to individual health needs. By emphasizing preventive
+measures, individuals and healthcare systems can work collaboratively to identify and address potential health concerns
+before they escalate, leading to improved overall health outcomes.
+
+8. Holistic Health: Integrating Mind, Body, and Spirit
+A holistic approach to health recognizes the interconnectedness of the mind, body, and spirit. Integrative practices
+such as yoga, meditation, and acupuncture aim to promote balance and harmony. Addressing emotional and spiritual
+well-being alongside physical health contributes to a comprehensive understanding of one's overall health, fostering a
+sense of wholeness and vitality.
+
+9. Environmental Health: Sustaining a Healthy Planet for Healthy Lives
+The health of the planet is intricately linked to human health. Addressing environmental factors such as air and water
+quality, climate change, and sustainable practices contributes to the well-being of individuals and communities.
+Recognizing the impact of environmental factors on health and advocating for eco-friendly policies are essential
+components of promoting a healthier planet and population.
+
+10. Lifelong Learning: Empowering Health Literacy
+Continual learning about health and wellness empowers individuals to make informed decisions about their well-being.
+Health literacy, including understanding medical information, navigating healthcare systems, and interpreting research,
+is a valuable skill. By fostering a culture of lifelong learning, individuals can take an active role in managing their
+health and collaborating with healthcare professionals for better outcomes.
+
+In conclusion, embracing a holistic and proactive approach to health involves a multifaceted commitment to physical,
+mental, and emotional well-being. By incorporating healthy lifestyle practices, staying informed, and actively
+participating in community and environmental initiatives, individuals can contribute to a healthier and more resilient
+world.
+
+    
+</body>
+
+
+</html>

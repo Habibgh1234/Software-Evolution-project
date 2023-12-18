@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            height: 100pc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(OIP.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #activeLink {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="Home.html">Back</a>
+        <a href="SING.HTML">Product</a>
+
+    </div>
+    <div style="padding:20px 0;">
+        <video src="HELTH (3).mp4" width="400" controls autoplay muted></video>
+    </div>
+
+    <script>
+        function myFunction() {
+            var navbar = document.getElementsByClassName("navbar")[0];
+            var navItems = navbar.getElementsByTagName("a");
+            var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+            for (var i = 0; i < navItems.length; i++) {
+                var currLink = navItems[i];
+                var refElement = document.getElementById(currLink.getAttribute("href").substr(1));
+                if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.offsetHeight > scrollPos) {
+                    document.getElementById("activeLink").id = "";
+                    currLink.id = "activeLink";
+                } else {
+                    currLink.id = "";
+                }
+            }
+        }
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementsByClassName("navbar")[0];
+        var navItems = navbar.getElementsByTagName("a");
+
+        for (var i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener('click', clickFunction);
+        }
+
+        function clickFunction() {
+            document.getElementById("activeLink").id = "";
+            this.id = "activeLink";
+        }
+    </script>
+    
+
+</body>
+<div class="container mt-5">
+   
+    <h1 class="bold" style="color: #f2f2f2;" >Welcome to BuyAndSell</h1>
+    <p style="color: #f6f7fd;" style="size: 100cm;"> Chemist: Your One-Stop Shop for Health and Wellness
+    Welcome to Pfago Chemist, your online pharmacy destination for all things health and wellness! We combine the
+    convenience of online shopping with the expertise of a trusted pharmacy, giving you access to a wide range of products
+    and services in just a few clicks.
+    
+    Buy with Confidence :
+    
+    Extensive Selection: Browse our comprehensive catalog of medicines, over-the-counter medication, vitamins, supplements,
+    beauty products, and more. We cater to your every need, from prescription refills to everyday essentials.
+    Guaranteed Quality: We only source genuine products from reputable suppliers, ensuring you receive the highest quality
+    medications and healthcare items.
+    Secure Shopping: Your privacy and security are our top priorities. We utilize secure payment gateways and ensure your
+    information remains confidential.
+    Sell with Ease:
+    
+    Simple Listing: List your unwanted or unused pharmaceutical and healthcare products on our platform with ease. Reach a
+    wider audience and find buyers quickly.
+    Competitive Pricing: Get the best value for your items by setting your own prices and maximizing your profit potential.
+    Hassle-free Transactions: Securely manage your sales and receive payments directly through our platform.
+    More Than Just Products:
+    
+    Expert Consultations: Get professional advice from our team of qualified pharmacists. Ask questions, discuss medication
+    interactions, and receive personalized guidance for your health needs.
+    Health Information: Stay informed with our regularly updated blog articles and resources on various health topics.
+    Convenient Services: Enjoy extended opening hours, delivery options, and other services designed to make your experience
+    seamless and hassle-free.
+    Pfago Chemist is more than just a pharmacy; it's your partner in health. We are committed to providing you with the
+    tools and resources you need to live a healthy and fulfilling life.
+    
+    Visit Pfago Chemist today and experience the difference!
+    Additional Note:
+    You can customize this description further by adding details about your unique offerings, promotions, or target
+    audience.
+    Consider including keywords relevant to your location and services to improve search engine optimization.
+
+    Pfago Chemist: A Paradigm Shift in Ghanaian Pharmaceutical Care
+    In the bustling heart of Accra, Ghana, a digital revolution is brewing in the realm of healthcare. Pfago Chemist, a name
+    echoing the rhythmic pulse of local life, is not just another online pharmacy; it's a transformative wave reshaping the
+    way Ghanaians access and manage their health.
+    
+    Gone are the days of long queues and limited options. Pfago Chemist ushers in a new era of convenience and empowerment.
+    Its virtual shelves overflow with a diverse array of medicines, supplements, and wellness products, readily available at
+    the tap of a finger. From prescription refills to everyday essentials, it caters to every need, offering a one-stop shop
+    for Ghanaian families.
+    
+    But Pfago Chemist is more than just a digital marketplace. It's a testament to quality and trust. By partnering with
+    reputable suppliers and implementing strict quality control measures, it ensures Ghanaians receive genuine products,
+    safeguarding their health and well-being. The platform's secure payment gateways and data encryption further solidify
+    this commitment to customer safety, fostering a sense of confidence and peace of mind.
+    
+    Yet, Pfago Chemist doesn't stop at providing products. It empowers individuals to become active participants in their
+    own healthcare journey. Through its "Sell with Ease" feature, Ghanaians can list unwanted or unused pharmaceutical
+    items, creating a vibrant community of exchange and maximizing the value of their resources. This not only promotes
+    sustainability but also fosters a sense of community, where one person's surplus becomes another's essential, bridging
+    gaps and strengthening the healthcare ecosystem.
+    
+    Furthermore, Pfago Chemist transcends the confines of product transactions. It nurtures a culture of informed care. Its
+    team of qualified pharmacists offer expert consultations, readily answering questions and dispelling anxieties. The
+    platform's regularly updated blog serves as a reliable source of health information, empowering Ghanaians to make
+    informed decisions about their well-being.
+    
+    This commitment to comprehensive healthcare extends beyond the digital realm. Pfago Chemist recognizes the importance of
+    accessibility, offering extended opening hours and convenient delivery options, ensuring that even the busiest
+    individual can prioritize their health. These thoughtful touches underscore the platform's dedication to serving the
+    Ghanaian community, putting people before profits.
+    
+    In conclusion, Pfago Chemist is not merely a website; it's a beacon of hope for a healthier future in Ghana. It
+    dismantles traditional barriers, democratizes access to quality healthcare, and empowers individuals to actively
+    participate in their well-being. As it continues to evolve, Pfago Chemist stands poised to rewrite the narrative of
+    Ghanaian healthcare, leaving an indelible mark on the lives of countless individuals and families. It's a story waiting
+    to be told, one tap, one click, one life-changing purchase at a time.
+    </html>
